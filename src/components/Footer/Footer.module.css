@@ -6,3 +6,13 @@
   text-align: center;
 }
 
+.footer a {
+  color: inherit;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

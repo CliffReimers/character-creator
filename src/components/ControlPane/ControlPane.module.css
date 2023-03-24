@@ -1,7 +1,6 @@
 .controlPane {
   padding: 24px;
-  /* Optical centering */
-  padding-top: 18px;
+  padding-right: 0;
   background-color: white;
   border-radius: 8px;
   /*
@@ -10,6 +9,7 @@
     to deal with it yet!
   */
   margin-bottom: 32px;
+  overflow: visible;
 }
 
 .title {
@@ -23,4 +23,13 @@
   font-size: 0.875rem;
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
+}
+
+@media (max-width: 1024px) {
+  .controlPane {
+    width: 400px;
+    display: inline-block;
+    margin-right: 32px;
+    margin-bottom: 0;
+  }
 }
